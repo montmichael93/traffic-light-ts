@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-const Lightoff = "circle black";
-const trafficLight = ["lets go!", "slow down", "stop"];
-
 export const FunctionalTrafficLight = () => {
+  const Lightoff = "circle black";
+  const trafficLight = ["lets go!", "slow down", "stop"];
   const [lightIndex, setLightIndex] = useState(0);
   const currentLight = trafficLight[lightIndex];
   const lastLight = lightIndex === trafficLight.length - 1; // last in the array
